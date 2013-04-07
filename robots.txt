@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://aditij.github.com/sitemap.xml 

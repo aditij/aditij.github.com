@@ -1,1 +1,171 @@
-My Octopress Page is coming soon &hellip;
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="author" content="Aditi Jain">
+
+  
+  <meta name="description" content="I have to admit &#8211; I am pretty loose with my Facebook Connect credentials. Any startup that has a pretty front-end and pretends to be at least &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://aditij.github.com">
+  <link href="/favicon.ico" rel="icon">
+  
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   class="no-sidebar"  >
+  <header role="banner"><hgroup>
+  <h1></h1>
+  
+    <h2><a href="/">AJ</a></h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation">
+  
+<!--<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:aditij.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>-->
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about">About</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/02/09/ghost-data-problems-with-facebook-connect/">Ghost Data Problems When Using Facebook Connect</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-02-09T18:22:00-08:00" pubdate data-updated="true">Feb 9<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I have to admit &#8211; I am pretty loose with my Facebook Connect credentials. Any startup that has a pretty front-end and pretends to be at least working towards obtaining seed funding can have a free ride with my Facebook login (using protection of course, aka cryptography-free OAuth 2.0 over https) as long as I know they won&#8217;t post to my wall without my consent. I suppose I should have higher standards so that groomed front page marketing messages won&#8217;t instantly woo me into clicking the shiny blue fb login button.</p>
+
+<p>But when it comes to Gen Y browsing habits online, I&#8217;d say perennially laziness, short attention spans, and unreasonable trust (did I even check if that page is using SSL before entering my bank account information?) are hallmarks for which I am no exception at avoiding. Thus, my interest in playing with every new startup on the block combined with my resistance for creating new accounts for each one, makes logging in with Facebook Connect the ideal solution for me. It&#8217;s easy, it&#8217;s painless, and I&#8217;m always logged into Facebook so within 2-seconds I&#8217;m in. Facebook Connect has never caused me problems that I&#8217;ve known of so I haven&#8217;t had to reevaluate my reckless behavior, until now.</p>
+
+<p>Today I received a new subscriber on Plancast &#8211; a site that aggregates friends events and activities from multiple services (Facebook, Eventbrite, Meetup, Google Calender, etc) in order to better recommend activities you would enjoy as well. I hadn&#8217;t visited Plancast since April 2010 when I originally connected my Facebook account to create a user profile. I logged on today for the first time (when notified of the new subscriber) and was confronted with the following profile:</p>
+
+<p><img src="/images/plancast.png"></p>
+
+<p>This screenshot disturbs me for several reasons. (1) My new subscriber was a &#8216;professional&#8217; contact, thus (2) I never wanted &#8220;The Devil from Acapulco&#8221; @ a sketchy nightclub to show up for public view, (3) Wait what? I never even remember saying I was planning on attending that event, how did that get there in April 2010?!?, (4) What and where is other &#8220;ghost personal data&#8221; from Facebook being displayed without me even realizing?, and (5) Can I delete and remove this ghost data from my application profiles now that it has already been pulled and saved externally?</p>
+
+<p>Unfortunately, in Plancast&#8217;s case, I can&#8217;t delete past content or events I&#8217;ve so-called attended, only upcoming ones. This is bad. I should have complete control over my data &#8211; even data automatically pulled from APIs I asked to be linked to the current application.</p>
+
+<p>Other problems with using Facebook Connect for logging in:</p>
+
+<p>1) User oversight in understanding how her data is being used currently and no information about how it will be used in the future. If apps change how they use personal data, the user may not be informed and the data remains publicly visible in many different locations, in manners not originally intended at the time of connecting to the application.</p>
+
+<p>2) User forgets that she connected her Facebook account 299 days ago. Might not ever become top-of-mind unless if a notification is pushed to the user, at which point, it might be too late or inconvenient; who has already seen the compromising information the 298 days before I bothered to log in again? Additionally, the data is stale at this point, degrading the application&#8217;s experience.</p>
+
+<p>3) User succumbs to mindlessly accepting pop up dialogs. As Joel Spolsky of Fog Creek wrote in 2000 (a classic?) &#8220;Designing for People Who Have Better Things To Do With Their Lives&#8221;:</p>
+
+<p>In fact, users don&#8217;t read anything&#8230;experience shows that the more words you put in that dialog box, the fewer people will actually read it. Experienced UI designers literally try to minimize the number of words on dialogs to increase the chances that they will get read.</p>
+
+<p><img src="/images/fakerequest.png"></p>
+
+<p>Would you notice what was wrong with this dialog? I wouldn&#8217;t; it&#8217;s so comfortingly Facebook branded.</p>
+
+<p>I suppose it&#8217;s fine if I continue being loose with Facebook Connect, allowing my account to sow oats in the wild, wild web. But I have to be prepared to face the consequences of my ghost data (children?) being left all over the internet without my knowledge. Right now Facebook says:</p>
+
+<p>You&#8217;re using 125 apps, games, and websites&#8230;</p>
+
+<p>Clearly I have some gutter cleaning to do.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+    <a href="/blog/archives">Blog Archives</a>
+    
+  </div>
+</div>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Aditi Jain -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

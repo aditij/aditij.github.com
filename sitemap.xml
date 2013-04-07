@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
+    <url>
+        <loc>
+            http://aditij.github.com/blog/2011/02/09/ghost-data-problems-with-facebook-connect/
+        </loc>
+        <lastmod>2013-04-06T20:01:05-07:00</lastmod>
+    </url>
+    <url>
+        <loc>http://aditij.github.com/404.html</loc>
+        <lastmod>2013-04-06T19:47:48-07:00</lastmod>
+    </url>
+    <url>
+        <loc>http://aditij.github.com/blog/archives/</loc>
+        <lastmod>2013-04-06T20:01:05-07:00</lastmod>
+    </url>
+    <url>
+        <loc>http://aditij.github.com/</loc>
+        <lastmod>2013-04-06T20:01:05-07:00</lastmod>
+    </url>
+    <url>
+        <loc>http://aditij.github.com/robots.txt</loc>
+        <lastmod>2013-04-06T19:39:40-07:00</lastmod>
+    </url>
+</urlset>
