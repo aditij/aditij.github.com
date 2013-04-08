@@ -1,2 +1,88 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
+
+h1 {
+	font-size: 30px;
+}
+
+h2 a {
+	font-size: 40px;
+	text-align: top;
+}
+
+#mainindex {
+	margin-top: 3%;
+}
+
+#indextitle {
+	font-size: 45px;
+}
+
+.circular {
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    width: 150px;
+}
+
+.smallcircular {
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    width: 100px;
+    vertical-align: top;
+}
+
+.leftindex {
+	display: inline-block;
+	padding-right: 10px;
+	text-align: center;
+	margin-left: 10px;
+	vertical-align: top;
+}
+
+.rightindex {
+	position: fixed;
+	display: inline-block;
+	border-left: 3px solid;
+	padding-left: 20px;
+	align: top;
+	margin-right: 6%;
+	padding-top: 10px;
+}
+
+.box {
+	color: #000;
+	text-align: left;
+	overflow: hidden;
+}
+
+.box p {
+	line-height: 15px;
+	font-size: 15px;
+}
+
+.box img {
+	background-color: #555;
+	padding: 4px 4px 4px 4px;
+	margin-right: 7px;
+}
+
+.subbox {
+	line-height: 90%;
+}
+
+a.go
+{
+	font-size: 20px;
+	color: #009ACD;
+	text-decoration: none;
+}
+
+a:visited .go
+{
+	font-size: 20px;
+	color: #009ACD;
+	text-decoration: none;
+	font-weight: bold;
+}

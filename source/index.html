@@ -1,22 +1,67 @@
 ---
-layout: default
+layout: indexlay
+footer: false
 ---
+<div id="mainindex">
+	<div class="leftindex" style="display">
+		<img src="https://dl.dropbox.com/u/88765726/aditisilly.jpg" class="circular">
+		<br><a href="{{ root_url }}/blog">Blog</a>
+		<br><a href="http://linkedin.com/in/jainaditi" target="_blank">LinkedIn</a>
+		<br><a href="http://aditij.yelp.com" target="_blank">Yelp</a>
+	</div>
+	<div class="rightindex" style="display">
+		<div id="indextitle">
+			<b>Hi, I'm Aditi Jain</b>
+		</div>
+		<br>
+		<h2 style="margin-bottom: 9px;">Projects</h2>
+		<div class="box">
+			<a href="http://jobchalk.com" class="go" target="_blank">
+			<img src='https://dl.dropbox.com/u/88765726/jobchalk1.png' width=190px align=left border=0>
+			JobChalk &raquo </a>
+			<br><h4 style="margin-bottom: 2px">"Pinterest for Jobs"
+			&nbsp;&nbsp;
+			<span style="font-size: 10px; font-weight: none">RAILS &nbsp;|&nbsp; JAVASCRIPT</span>			
+			</h4>
+			<p>
+				Easily save, track, and apply to jobs you're interested in saving for later. 3rd place at 2012 LinkedIn DevelopHer Hackathon
+			</p>
+		</div>
+		<br>
+		<div class="box">
+			<a href="http://www.youtube.com/watch?v=a9FldOTQRHg" class="go" target="_blank">
+			<img src='https://dl.dropbox.com/u/88765726/droidxtend.png' width=190px align=left border=0>
+			DroidXtend &raquo </a>
+			<br><h4 style="margin-bottom: 2px">3D mobile controller
+			&nbsp;&nbsp;
+			<span style="font-size: 10px; font-weight: none">JAVA &nbsp;|&nbsp; ANDROID SDK</span>
+			</h4>
+			<p>
+				Interact with 3D models on your computer using your phone. Best Android App (sponsored by Google) at 2011 PennApps Hackathon
+			</p>
+		</div>
+		<br>
+		<div class="box">
+			<a href="http://friendshuffler.jainlabs.com" class="go" target="_blank">
+			<img src='https://dl.dropbox.com/u/88765726/friendshuffler.png' width=190px align=left border=0>
+			Friend Shuffler  &raquo</a>
+			<br><h4 style="margin-bottom: 2px">Random Facebook friend browser
+			&nbsp;&nbsp;
+			<span style="font-size: 10px; font-weight: none">COFFESCRIPT &nbsp;|&nbsp; FACEBOOK API</span>
+			</h4>
 
-<div class="blog-index">
-  {% assign index = true %}
-  {% for post in paginator.posts %}
-  {% assign content = post.content %}
-    <article>
-      {% include article.html %}
-    </article>
-  {% endfor %}
-  <div class="pagination">
-    {% if paginator.next_page %}
-      <a class="prev" href="{{paginator.next_page}}">&larr; Older</a>
-    {% endif %}
-    <a href="/blog/archives">Blog Archives</a>
-    {% if paginator.previous_page %}
-    <a class="next" href="{{paginator.previous_page}}">Newer &rarr;</a>
-    {% endif %}
-  </div>
+			<p>
+				Flip through random subsets of your contacts to ensure you are staying in touch with everyone
+				<br>
+			</p>
+		</div>
+		<br>
+		<h2 style="margin-bottom: 9px;">Past experiments</h2>
+		<ul style="line-height:15px; margin-bottom: 0px;">
+			<li>ZeroTable found you the perfect restaurant reservations with zero effort</li>
+			<li>Independent epidemiology (YES) and cross-border M&A (Wharton) research</li>
+			<li>Created Project Literacy which raised ~$10K for Room to Read through local book sales</li>
+		</ul>
+	</div>
 </div>
+
